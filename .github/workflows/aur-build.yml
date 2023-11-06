@@ -27,13 +27,13 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        tag_name: metronome.im
+        tag_name: metronome-im
     - name: Upload Files to Release
       uses: softprops/action-gh-release@v1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        tag_name: metronome.im
+        tag_name: metronome-im
         name: metronome-git build ${{ github.run_number }} from ${{ steps.date.outputs.date }}
         body: metronome-git build ${{ github.run_number }} from ${{ steps.date.outputs.date }}
         files: |

@@ -7,6 +7,9 @@ on:
   schedule:
     - cron: "21 4 * * 0"
 
+permissions:
+  contents: write
+
 jobs:
   build_repository:
     runs-on: ubuntu-latest

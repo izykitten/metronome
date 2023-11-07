@@ -16,9 +16,7 @@ jobs:
     steps:
     - name: Get current time and date
       id: date
-     #run: echo "::set-output name=date::$(date +'%Y-%m-%d %H:%M')"
-      run: echo "name=date::$(date +'%Y-%m-%d %H:%M')" >> $GITHUB_OUTPUT
-
+      run: echo "::set-output name=date::$(date +'%Y-%m-%d %H:%M')"
     - name: Build Packages
       uses: kopp/build-aur-packages@v1
       with:
